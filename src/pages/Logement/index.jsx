@@ -1,5 +1,9 @@
 function Logement() {
-    return <div><h1>Kasa</h1></div>
+    return (
+        <div>
+            <h1>Logement 🧮</h1>
+        </div>
+    )
 }
 
-export default Logement;
+export default Logement
