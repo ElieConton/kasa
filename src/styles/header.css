@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 335px;
+    height: 47px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.navigation{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 17px;
+    width: 140px;
+}
+
+.nav-link{
+    color:  #FF6060;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
