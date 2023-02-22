@@ -1,11 +1,4 @@
-.cards{
-    margin-top: 20px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    top: 216px;
-    left: 21px;
-}
+
 
 .card{
     position: relative;
