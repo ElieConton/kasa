@@ -2,10 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 335px;
+    margin: 20px 20px 0 20px;
     height: 47px;
-    margin-left: 20px;
-    margin-top: 20px;
+
 }
 
 .navigation{

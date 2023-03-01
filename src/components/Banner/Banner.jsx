@@ -1,15 +1,11 @@
-import '../../styles/banner.css'
-import Imgbanner from '../../utils/images/imgbanner.png'
+import './banner.css'
 
 
-function Banner() {
+
+function Banner({children}) {
  return(
     <div className='banner'>
-        <img className='banner-img' src={Imgbanner} alt="banniere forêt et montagne" />
-        <h1 className='banner-title'>
-            <span>Chez vous,</span>
-            <span>partout et ailleurs</span>
-        </h1>
+        {children}
     </div>
  )
 }

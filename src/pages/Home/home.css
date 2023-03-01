@@ -1,9 +1,31 @@
 .cards{
-    margin-top: 20px;
-    margin-left: 20px;
+    margin: 20px 20px 0 20px;
     display: flex;
     flex-direction: column;
-    top: 216px;
-    left: 21px;
 }
 
+.banner-img {
+    height: 111px;
+    width: 100%;
+    border-radius: 10px;
+    filter: brightness(0.8);
+}
+
+
+.banner-title{
+    position: absolute;
+    top: 31px;
+    left: 16px;
+    width: 217px;
+    height: 48px;
+    color: #FFFFFF;
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    height: 24px;
+}
