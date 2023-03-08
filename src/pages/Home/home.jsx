@@ -1,4 +1,4 @@
-import Banner from '../../components/Banner/Banner';
+import Banner from '../../components/Banner/banner';
 import Card from '../../components/Card/card';
 import logements from '../../utils/logements.json';
 import './home.css'
@@ -16,7 +16,7 @@ function Home() {
       </Banner>
       <div className="cards">
             {logements.map ((element) => (
-              <Card id= {element.id} title= {element.title} backgroundSrc= {element.cover} link= { `logement/${element.id}`}/>
+              <Card  key= {element.id} title= {element.title} backgroundSrc= {element.cover} link= { `logement/${element.id}`}/>
              
             ))}
         </div> 

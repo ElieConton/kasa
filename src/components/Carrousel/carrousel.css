@@ -1,0 +1,49 @@
+.carrousel-container{
+    height: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrousel-img{
+    width: 310px;
+    height: 236.1px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.picture {
+    position: absolute;
+    opacity: 0;
+}
+
+
+.picture-active {
+    position: absolute;
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+.arrow-right {
+    position: relative;
+    left: 160px;
+    height: 19.8px;
+    width: 11.67px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.arrow-left {
+    position: relative;
+    right: 160px;
+    height: 19.8px;
+    width: 11.67px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.compteur{
+    display: none;
+}
+
+

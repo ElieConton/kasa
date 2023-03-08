@@ -1,7 +1,7 @@
-import Collapse from "../../components/collapse/collapse"
-import './Propos.css'
+import Collapse from "../../components/Collapse/collapse"
+import './propos.css'
 import Imgbannerpropos from '../../utils/images/imgbannerpropos.png'
-import Banner from "../../components/Banner/Banner"
+import Banner from "../../components/Banner/banner"
 
 function Propos() {
     return (

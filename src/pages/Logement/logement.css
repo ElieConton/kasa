@@ -1,0 +1,54 @@
+.Tags{
+    display: flex;
+    margin: 20px;
+}
+
+.host-rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.logement-title{
+
+font-size: 18px;
+font-weight: 500;
+line-height: 26px;
+margin: 10px 20px 0 20px;
+text-align: left;
+
+}
+
+.logement-location{
+   
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+color: #ff6060;
+text-align: left;
+margin: 0 20px 0 20px;
+}
+
+.host-rating{
+    margin: 0 20px 0 20px;
+}
+.logement-description{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 23px ;
+    margin-left: 11px;
+    line-height: 17px;
+    color: #ff6060;
+}
+
+.logement-equipments{
+    font-size: 12px;
+    font-weight: 400;
+    list-style: none;
+    padding: 0;
+    margin-top: 23px ;
+    margin-left: 11px;
+    line-height: 17px;
+    color: #ff6060;
+}
