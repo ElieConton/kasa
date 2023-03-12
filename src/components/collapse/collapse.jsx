@@ -5,11 +5,11 @@ import FlecheBas from './fleche_bas.png'
 
 function Collapse({title, children}) {
     const [isOpen, setIsOpen] = useState(false)
-    const open = () =>{ setIsOpen(!isOpen)}
+    const toggle = () =>{ setIsOpen(!isOpen)}
 
     return  (
         <div className="collapse">
-            <button className="collapseButton" onClick={open}>
+            <button className="collapseButton" onClick={toggle}>
                 {title}
                 {isOpen ?  (
                     <img className="collapseImg" src={FlecheHaut} alt="fleche vers le haut" />
