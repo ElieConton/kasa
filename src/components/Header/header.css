@@ -28,3 +28,26 @@
     cursor: pointer;
     text-decoration-line: underline;
 }
+
+@media screen and (min-width : 1200px) {
+
+    .header{
+    margin: 40px 100px 63px 100px;
+    height: 68px;
+    }
+
+    .navigation{
+        height: 34px;
+        width: 309px;
+    }
+
+    .nav-link{
+        font-size: 24px;
+        text-transform: none;
+    }
+
+    .navigation-svg{
+        width: 210px;
+        height: 68px;
+    }
+}

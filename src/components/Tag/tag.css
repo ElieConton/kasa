@@ -1,9 +1,9 @@
 .tag-container{
-    display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 20px 0 0 20px;
+  margin: 20px 0 16px 0;
   padding: 0;
 }
 
@@ -17,7 +17,24 @@
   justify-content: center;
   font-size: 10px;
   font-weight: 500;
+  height: 18px;
+  width: 84px;
+  padding: 0;
+}
+
+@media screen and (min-width : 1200px) {
+  .tag-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0 0 0;
+    padding: 0;
+  }
+
+  .tag-list{  
+  font-size: 14px;
   height: 25px;
-  min-width: 90px;
-  padding: 0 15px;
+  min-width: 115px;
+}
 }

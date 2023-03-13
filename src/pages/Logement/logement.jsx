@@ -18,13 +18,19 @@ function Logement() {
     return (
         <div>
             <Caroussel pictures={logement.pictures}/>
-            <h2 className='logement-title'>{logement.title}</h2>
-            <h3 className='logement-location'>{logement.location}</h3>
-            <Tag tags={logement.tags}/>
-            <div className='host-rating'>
-                <Rating ratings={logement.rating}/>
-                <Host host={logement.host}/>
+            <div className='logement-detail'>
+                <div>
+                    <h2 className='logement-title'>{logement.title}</h2>
+                    <h3 className='logement-location'>{logement.location}</h3>
+                    <Tag tags={logement.tags}/>
+                </div>
+            
+                <div className='host-rating'>
+                    <Rating ratings={logement.rating}/>
+                    <Host host={logement.host}/>
+                </div>
             </div>
+            <div className='logement-collapse'>
             <Collapse title='Description'>
                 <p className='logement-description'>
                     {logement.description}
@@ -41,6 +47,7 @@ function Logement() {
                 })}
                 </ul>
             </Collapse>
+            </div>
         </div>
     )
 }

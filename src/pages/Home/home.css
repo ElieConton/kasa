@@ -29,3 +29,18 @@
 span{
     height: 24px;
 }
+
+@media screen and (min-width : 1200px) {
+    .banner-img {
+        height: 223px;
+    }
+    
+    .cards{
+        margin: 20px 100px 0 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 56px 50px 56px 50px;
+    }
+}
