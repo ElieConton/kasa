@@ -14,6 +14,7 @@ function Logement() {
     const logement = logements.find(item => item.id === id)
     if (!logement) return <Error />
     
+    
 
     return (
         <div>
@@ -31,22 +32,26 @@ function Logement() {
                 </div>
             </div>
             <div className='logement-collapse'>
-            <Collapse title='Description'>
-                <p className='logement-description'>
-                    {logement.description}
-                </p>
-            </Collapse>
-            <Collapse title='Equipements' >
-                <ul className='logement-equipments'> 
-                    {logement.equipments.map((equipement, idx) => {
-                        return(
-                            <li key={idx}>
-                                {equipement}
-                            </li>
-                    )
-                })}
-                </ul>
-            </Collapse>
+                <div className='logement-collapse-description'>
+                    <Collapse title='Description'>
+                        <p className='logement-description'>
+                            {logement.description}
+                        </p>
+                    </Collapse>
+                </div>
+                <div className='logement-collapse-equipments'>
+                    <Collapse title='Equipements' >
+                        <ul className='logement-equipments'> 
+                            {logement.equipments.map((equipement, idx) => {
+                                return(
+                                    <li key={idx}>
+                                        {equipement}
+                                    </li>
+                            )
+                        })}
+                        </ul>
+                    </Collapse>
+                </div>
             </div>
         </div>
     )

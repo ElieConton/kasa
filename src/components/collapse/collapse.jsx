@@ -9,12 +9,12 @@ function Collapse({title, children}) {
 
     return  (
         <div className="collapse">
-            <button className="collapseButton" onClick={toggle}>
+            <button className="collapse-button" onClick={toggle}>
                 {title}
                 {isOpen ?  (
-                    <img className="collapseImg" src={FlecheHaut} alt="fleche vers le haut" />
+                    <img className="collapse-img" src={FlecheHaut} alt="fleche vers le haut" />
                 ) : (
-                    <img className="collapseImg" src={FlecheBas} alt="fleche vers le bas" />
+                    <img className="collapse-img" src={FlecheBas} alt="fleche vers le bas" />
                 )}
             </button>
             {isOpen ? ( 

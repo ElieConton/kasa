@@ -2,13 +2,12 @@ import Banner from '../../components/Banner/banner';
 import Card from '../../components/Card/card';
 import logements from '../../utils/logements.json';
 import './home.css'
-import Imgbanner from '../../utils/images/imgbanner.png'
+
 
 function Home() {
   return (
     <div>
-      <Banner>
-        <img className='banner-img' src={Imgbanner} alt="banniere forêt et montagne" />
+      <Banner origin="home">
         <h1 className='banner-title'>
             <span>Chez vous,</span>
             <span>partout et ailleurs</span>

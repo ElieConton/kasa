@@ -1,65 +1,35 @@
 import './carrousel.css'
+import React from 'react'
 import { useState } from 'react'
-import ArrowLeft from './arrowLeft.png'
-import ArrowRight from './arrowRight.png'
+import  ArrowLeft from './arrowLeft.png'
+import  ArrowRight from './arrowRight.png'
 
-function Caroussel({ pictures }) {
- 
-  const [current, setCurrent] = useState(0)
-  const length = pictures.length
+function Carrousel(props) {
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const arrayLenght = props.pictures.flatMap(el => el.pictures).length;
 
-  const goToPrevious = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1)
+  function prevSlide() {
+    let newSlide = currentSlide === 0 ? arrayLenght - 1 : currentSlide - 1;
+    setCurrentSlide(newSlide);
   }
-
-  const goToNext = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1)
+  function nextSlide() {
+    let newSlide = currentSlide === arrayLenght - 1 ? 0 : currentSlide + 1;
+    setCurrentSlide(newSlide);
   }
-
-  
-  if (!Array.isArray(pictures) || length <= 0) {
-    return null
-  }
-
   return (
-    <div>
-      <div className="carrousel-container">
-        {pictures &&
-          pictures.map((picture, index) => {
-            return (
-              <div 
-                className={index === current ? 'picture-active' : 'picture'}
-                key={index}
-              >
-                <img
-                  className="carrousel-img"
-                  key={index}
-                  src={picture}
-                  alt="carousel_image"
-                />
-                
-                <div className={index === current ? 'compteur' : 'compteur2'}>
-                  {current + 1}/{pictures.length}
-                </div>
-              </div>
-            )
-          })}
-        <div>
-          <img
-            className="arrow-right"
-            src={ArrowRight}
-            alt="fleche vers la droite"
-            onClick={goToNext}
-          />
-          <img
-            className="arrow-left"
-            src={ArrowLeft}
-            alt="fleche vers la gauche"
-            onClick={goToPrevious}
-          />
-        </div>
+    <section className="carrousel-container">
+      <div className="carrousel-navigation">
+        <img src={ArrowLeft} alt="précedent" className={arrayLenght > 1 ? "arrow" : "arrow-hide"} onClick={() => {prevSlide()}} />
+        <img src={ArrowRight} alt="suivant" className={arrayLenght > 1 ? "arrow" : "arrow-hide"} onClick={() => {nextSlide()}} />
       </div>
-    </div>
+      {props.pictures.map((picture, index) => {
+        return (
+          <img src={picture} alt="" key={index} className={index === currentSlide ? "carrousel-img" : "hide-img"} />
+        )
+      })}
+      <div className="carrousel-text">{currentSlide + 1}/{props.pictures.length}</div>
+    </section>
   )
 }
-export default Caroussel
+
+export default Carrousel;

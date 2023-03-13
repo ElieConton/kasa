@@ -1,14 +1,12 @@
 
 import './propos.css'
-import Imgbannerpropos from '../../utils/images/imgbannerpropos.png'
 import Banner from "../../components/Banner/banner"
 import Collapse from "../../components/Collapse/collapse"
 function Propos() {
     return (
         <div>
-            <Banner>
-                <img className='banner-img-propos' src={Imgbannerpropos} alt="banniere forêt et montagne" />
-            </Banner>
+            <Banner origin="propos"/>
+            <div className='propos-collapse'>
             <Collapse title= {'Fiabilité'}>
                 <p className="propos-paragraph">
                     Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.
@@ -29,6 +27,7 @@ function Propos() {
                 La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.
                 </p>
             </Collapse>
+            </div>
         </div>
         )
 }

@@ -6,13 +6,22 @@
     line-height: 17px;
     letter-spacing: 0em;
     color: #FF6060;
+    background: #F7F7F7;
 }
 
-.banner-img-propos {
-    height: 223px;
-    width: 100%;
+.propos-collapse{
+    margin: 20px 20px 0 20px;
+}
+
+.banner-propos{
+    height:223px;
+    margin: 20px 20px 0 20px;
+    background: url('../../utils/images/imgbannerpropos.png'), #00000050;
+    background-size: cover;
+    background-position: center ;
+    background-blend-mode: darken;
+    object-fit: cover;
     border-radius: 10px;
-    filter: brightness(0.8);
 }
 
 @media screen and (min-width : 1200px) {
@@ -20,5 +29,13 @@
         padding: 36px 27px 19px 18px;
         font-size: 24px;
         line-height: 34px;
+    }
+
+    .propos-collapse{
+        margin: 30px 208px 0 208px;
+    }
+
+    .banner-propos{
+        margin: 50px 100px 0 100px;
     }
 }

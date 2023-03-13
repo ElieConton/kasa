@@ -13,7 +13,7 @@ function Footer() {
                 <path d="M53.0946 28.9116V36.2201L56.1927 34.393V27.0845L53.0946 28.9116Z" fill="white"/>
                 <path d="M61.641 19.9909L48.9282 12.5749L41.8774 8.49072L34.9335 20.6357L35.0403 32.0284L47.6463 39.4443L48.9282 38.692V27.9442L54.5902 17.9488L60.359 21.2806V32.0284L61.641 31.276V19.9909Z" fill="white"/>
             </svg>
-            <p className='paragraph'>
+            <p className='footer-paragraph'>
                 © 2020 Kasa. All rights reserved
             </p>
         </footer>
